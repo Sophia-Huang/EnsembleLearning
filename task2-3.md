@@ -15,7 +15,7 @@ Adaboost的基本思想是：将弱学习器层层累加，在每一层训练的
 
 这个过程很类似于人类学习的过程，也即“**从错误中学习**”，我们学习新知识的过程往往是迭代的，第一遍学习的时候，我们会记住一部分知识，但是往往也会犯一些错误。在进一步学习时，我们会对之前犯错的知识进行进一步的巩固，以减少此类错误的发生。如此不断循环往复，直到犯错误的次数减到很低的程度。
 
-假设给定一个二分类的训练数据集：$T=\left\{\left(x_{1}, y_{1}\right),\left(x_{2}, y_{2}\right), \cdots,\left(x_{N}, y_{N}\right)\right\}$，其中每个样本点由特征与类别组成。特征$x_{i} \in \mathcal{X} \subseteq \mathbf{R}^{n}$，类别$y_{i} \in \mathcal{Y}=\{-1,+1\}$，$\mathcal{X}$是特征空间，$\mathcal{Y}$是类别集合，输出最终分类器$G(x)$。Adaboost算法如下：
+假设给定一个二分类的训练数据集：$T=\{\left(x_{1}, y_{1}\right),\left(x_{2}, y_{2}\right), \cdots,\left(x_{N}, y_{N}\right)\}$，其中每个样本点由特征与类别组成。特征$x_{i} \in \mathcal{X} \subseteq \mathbf{R}^{n}$，类别$y_{i} \in \mathcal{Y}=\{-1,+1\}$，$\mathcal{X}$是特征空间，$\mathcal{Y}$是类别集合，输出最终分类器$G(x)$。Adaboost算法如下：
 (1) 初始化训练数据的分布：$D_{1}=\left(w_{11}, \cdots, w_{1 i}, \cdots, w_{1 N}\right), \quad w_{1 i}=\frac{1}{N}, \quad i=1,2, \cdots, N$
 (2) 对于$m=1,2,...,M$
 
