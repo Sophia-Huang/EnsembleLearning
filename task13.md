@@ -16,7 +16,7 @@ Stacking的过程如下：
 
 具体的示意图如下：
 
-![stacking](task13.assets/stacking-1621152231961.png)
+![stacking](task13.assets/stacking.png)
 
 ## Stacking实践
 
